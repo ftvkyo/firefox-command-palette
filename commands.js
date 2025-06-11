@@ -91,6 +91,17 @@ commands = [
         args: () => []
     },
     {
+        name: "duplicate this tab",
+        desc: "",
+        run: async () => {
+            const tabs = await browser.tabs.query({active: true, currentWindow: true});
+            tabs.map(tab => {
+                browser.tabs.duplicate(tab.id)
+            });
+        },
+        args: () => [],
+    },
+    {
         name: "close this tab",
         desc: "",
         run: async () => {
