@@ -24,6 +24,11 @@
     "default_title": "Command Palette",
     "default_popup": "command-bar.html"
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-command-palette@ftvkyo.me"
+    }
+  },
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
